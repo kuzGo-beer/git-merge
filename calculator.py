@@ -32,6 +32,7 @@ def multiply(a, b):
     return a * b
 
 
+
 def divide(a, b):
    
     if b == 0:
@@ -39,20 +40,9 @@ def divide(a, b):
     return a / b
 
 
-def show(title, value):
-    """Печатает результат с учётом настройки verbose."""
-    if CONFIG["verbose"]:
-        print(f"{title} = {format_number(value)}")
-    else:
-        print(format_number(value))
-
 
 def main():
     print(GREETING)
-    show("2 + 3", add(2, 3))
-    show("10 - 4", subtract(10, 4))
-    show("6 * 7", multiply(6, 7))
-    show("10 / 4", divide(10, 4))
 
 
 if __name__ == "__main__":
