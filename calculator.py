@@ -43,13 +43,6 @@ def divide(a, b):
     return a / b
 
 
-def format_number(value):
-    """Округляет число по настройке precision (для целых ничего не меняет)."""
-    if isinstance(value, float):
-        return round(value, CONFIG["precision"])
-    return value
-
-
 def show(title, value):
     """Печатает результат с учётом настройки verbose."""
     if CONFIG["verbose"]:
