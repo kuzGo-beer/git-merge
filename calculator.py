@@ -35,20 +35,8 @@ def multiply(a, b):
     return a * b
 
 
-def divide(a, b):
-    # ЗОНА 3b. Решите, что делать при делении на ноль:
-    # вернуть 0, выбросить исключение или вернуть None.
-    if b == 0:
-        raise ValueError("На ноль делить нельзя")
-    return a / b
 
 
-def show(title, value):
-    """Печатает результат с учётом настройки verbose."""
-    if CONFIG["verbose"]:
-        print(f"{title} = {format_number(value)}")
-    else:
-        print(format_number(value))
 
 
 def main():
